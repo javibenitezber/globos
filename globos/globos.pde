@@ -1,4 +1,6 @@
+PImage Blopinguel;
 class Globo
+
 {
   float x, y,vx,vy;
   Globo (float _x, float _y)
@@ -17,7 +19,8 @@ class Globo
 
   void dibujate()
   {
-      ellipse(x,y,100,100);
+      ellipse(x,y,80,100);
+     
   }
   
 }
@@ -29,15 +32,19 @@ void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  Blopinguel =  loadImage("blopinguel.png");
+
 }
 
 void draw()
 {
-  background(0);
+  background(50,200,0);
+  image(Blopinguel,0,0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
     globos.get(i).dibujate();
+    
   }
 }
 
