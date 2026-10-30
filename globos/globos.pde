@@ -22,10 +22,11 @@ class Globo
   void dibujate()
   {
      fill(c);
-     ellipse(x,y,80,100);
+     rectMode(CENTER);
+     rect(x,y,80,120);
      imageMode(CENTER);
-     image(Blopinguel,x,y,80,100);
-     triangle(x,y+50,x-10,y+60,x+10,y+60);
+     image(Blopinguel,x,y,75,85);
+     triangle(x,y+50,x-10,y+100,x+10,y+100);
   }
   
 }
@@ -43,7 +44,7 @@ void setup()
 
 void draw()
 {
-  background(0,0,0);
+  background(100,0,0);
   
   for(int i=0;i<globos.size();i++)
   {
