@@ -23,7 +23,7 @@ class Globo
   {
      fill(c);
      rectMode(CENTER);
-     rect(x,y,80,100);
+     rect(x,y,80,120);
      imageMode(CENTER);
      image(Blopinguel,x,y,75,85);
      triangle(x,y+50,x-10,y+100,x+10,y+100);
