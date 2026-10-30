@@ -26,7 +26,7 @@ class Globo
      rect(x,y,80,100);
      imageMode(CENTER);
      image(Blopinguel,x,y,75,85);
-     triangle(x,y+50,x-10,y+60,x+10,y+60);
+     triangle(x,y+50,x-10,y+100,x+10,y+100);
   }
   
 }
