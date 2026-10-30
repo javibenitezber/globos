@@ -44,7 +44,7 @@ void setup()
 
 void draw()
 {
-  background(0,0,0);
+  background(100,0,0);
   
   for(int i=0;i<globos.size();i++)
   {
